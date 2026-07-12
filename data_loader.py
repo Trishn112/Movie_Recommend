@@ -10,7 +10,7 @@ FILE_ID = os.getenv("FILE_ID")
 
 URL = f"https://drive.google.com/uc?id={FILE_ID}"
 
-@st.cache_resource
+@st.cache_resource(show_spinner="📂 Loading movie database...")
 def load_data():
     if not os.path.exists(SIM_FILE):
         print("Downloading similarity matrix...")
