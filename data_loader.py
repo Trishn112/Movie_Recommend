@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 SIM_FILE = "sim.pkl"
+FILE_ID = os.getenv("FILE_ID") 
 
 URL = f"https://drive.google.com/uc?id={FILE_ID}"
 
